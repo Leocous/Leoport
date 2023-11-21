@@ -1,6 +1,5 @@
-<html>
-
- <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -15,47 +14,96 @@
     <link href="assets/css/style.css" rel="stylesheet" media="screen">
     <script src="assets/js/modernizr.custom.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet" type="text/css">
-  </head><body>
+</head>
+<body>
     <header class="header">
-      <nav class="navbar navbar-custom" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html">Léo Cousin</a>
-          </div>
-          <div class="collapse navbar-collapse" id="custom-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="index.html">Home</a>
-              </li>
-              <li>
-                <a href="index.html#services">Mon parcours</a>
-              </li>
-              <li>
-                <a href="index.html#portfolio">Mes compétences</a>
-              </li>
-              <li>
-                <a href="index.html#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        
-      </nav>
+        <nav class="navbar navbar-custom" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">Léo Cousin</a>
+                </div>
+                <div class="collapse navbar-collapse" id="custom-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#services">Mon parcours</a></li>
+                        <li><a href="index.html#portfolio">Mes compétences</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <section>
-      <div style="height:50px;display:block;"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <br>
-            <h1>Projet Meshcentral </h1>
-            <p></p>
+        <div style="height:50px;display:block;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <h1>Projet Meshcentral </h1>
+                    <p>
+                        Installation de MeshCentral :<br>
+                        Nous avons besoin de Node.js et npm :<br>
+                        <code>apt install nodejs</code><br>
+                        <code>apt install npm</code><br><br>
+
+                        Ensuite nous allons créer un répertoire d’installation de MeshCentral :<br>
+                        <code>mkdir meshcentral</code><br>
+                        <code>cd meshcentral</code><br><br>
+
+                        Puis on passe à l’installation :<br>
+                        <code>npm install meshcentral</code><br><br>
+
+                        MeshCentral est donc installé, premier lancement :<br>
+                        <code>node ./node_modules/meshcentral –cert &lt;nomdedomaine ou ip&gt;</code><br><br>
+
+                        Lors de votre première connexion sur votre page MeshCentral, vous devrez créer votre premier compte qui sera le compte administrateur :<br><br>
+
+                        Pour ajouter un appareil, il faut tout d'abord créer un groupe :<br><br>
+
+                        Puis on clique sur « add agent » :<br><br>
+
+                        On envoie le lien de téléchargement ou directement le fichier de meshagent sur l’appareil cible :<br><br>
+
+                        Une fois l’agent lancé, il faudra cliquer sur installer :<br><br>
+
+                        Puis se connecter :<br><br>
+
+                        Une fois cela terminé, l’appareil apparaîtra dans la liste sur MeshCentral :<br><br>
+
+                        Pour prendre la main sur l’appareil cible, il suffit de cliquer sur l’appareil, puis dans le menu desktop et de cliquer sur « connect » :<br><br>
+
+                        Le bouton “Actions” permet d’éteindre, mettre en veille ou reboot l’agent, mais aussi d’exécuter des commandes (tout comme le bouton exécuter disponible) ou désinstaller l’agent :<br><br>
+
+                        Le bouton “Message” ou “Discussion instantanée” permet d’envoyer des messages et, dans le cas de la seconde option, recevoir aussi des messages de l’utilisateur sur l’appareil :<br><br>
+
+                        Les derniers onglets « Terminal/Console », « Evénements », « Dossier » et « Détails » permettent d’accéder à un terminal, à l’historique de l’utilisation de la machine, au fichier de l’appareil puis à ses détails (CPU, RAM, IP, etc.) :<br><br>
+
+                        Dans l’onglet « Terminal », en faisant un clic droit sur « se connecter », il est possible de choisir quel type de console on souhaite, puis pour se connecter il suffit donc de cliquer sur « se connecter » :<br><br>
+
+                        L’onglet « Dossiers » permet d’accéder aux fichiers de la machine, il est possible d’importer, modifier, supprimer et créer des dossiers et fichiers :<br><br>
+
+                        L’onglet « Evénements » nous donne accès à l’historique d’utilisation de la machine, il est aussi possible de télécharger les événements :<br><br>
+
+                        L’onglet « Détails » affiche les détails de l’appareil comme le CPU, la RAM, l’IP, etc. :<br><br>
+
+                        L’onglet « Console » est un terminal qui affiche les actions faites dans l’onglet « Terminal », il est aussi possible en cliquant sur « Action de l’agent » de faire différentes actions :<br><br>
+
+                        Dans le deuxième menu de MeshCentral, on retrouve les différents paramètres de gestion du compte ainsi que les groupes d’appareils :<br><br>
+
+                        Le troisième menu présente l’historique des Evénements du compte ainsi que dans le deuxième onglet « Rapports » il est possible de générer des rapports, il est aussi possible de les télécharger :<br><br>
+
+                        Le quatrième menu permet de créer ou supprimer des comptes ainsi que leur attribuer différents droits :<br><br>
+
+                        Dans le deuxième onglet il est possible de faire la même chose mais pour des groupes, on peut ajouter des membres du groupe, un appareil ainsi qu’un groupe d’appareil :<br><br>
+
+                        Le dernier menu permet de gérer le serveur.
           </div>
         </div>
       </div>
